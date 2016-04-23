@@ -1,0 +1,483 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@drawable/background"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.mohammodraihanulbash.guardianoftheair.Input3">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView">
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chittagong"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:id="@+id/textView31"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Condition"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView32"
+                android:layout_below="@+id/textView31"
+                android:layout_alignRight="@+id/textView31"
+                android:layout_alignEnd="@+id/textView31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="T : "
+                android:textSize="40dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/textView33"
+                android:layout_alignTop="@+id/textView31"
+                android:layout_toLeftOf="@+id/textView34"
+                android:layout_toStartOf="@+id/textView34" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="35C"
+                android:paddingRight="0dp"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView34"
+                android:layout_alignBottom="@+id/textView33"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="H :"
+                android:textSize="40dp"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:id="@+id/textView35"
+                android:layout_below="@+id/textView31"
+                android:layout_alignLeft="@+id/textView33"
+                android:layout_alignStart="@+id/textView33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="79%"
+                android:paddingRight="0dp"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView36"
+                android:layout_alignTop="@+id/textView35"
+                android:layout_toRightOf="@+id/textView35"
+                android:layout_toEndOf="@+id/textView35" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#stopAirDisease"
+                android:textSize="35dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView15"
+                android:layout_below="@+id/textView35"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignRight="@+id/textView36"
+                android:layout_alignEnd="@+id/textView36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Is there breathing problem in tour area? "
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:id="@+id/textView19"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/textView15"
+                android:layout_toStartOf="@+id/textView34"
+                android:layout_alignRight="@+id/textView15"
+                android:layout_alignEnd="@+id/textView15" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:id="@+id/rb1"
+                android:layout_below="@+id/textView19"
+                android:orientation="horizontal">
+
+
+
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/no_thug"
+                android:id="@+id/radioButton"
+                android:layout_below="@+id/textView19"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/low_thug"
+                android:id="@+id/radioButton2"
+                android:layout_alignTop="@+id/radioButton"
+                android:layout_toLeftOf="@+id/radioButton3"
+                android:layout_toStartOf="@+id/radioButton3" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/high_thug"
+                android:id="@+id/radioButton3"
+                android:layout_alignTop="@+id/radioButton4"
+                android:layout_toLeftOf="@+id/radioButton4"
+                android:layout_toStartOf="@+id/radioButton4" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/very_high_thug"
+                android:id="@+id/radioButton4"
+                android:layout_alignTop="@+id/radioButton2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Do you see various allergies in your area ? "
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:paddingTop="10dp"
+                android:id="@+id/textView37"
+                android:layout_below="@+id/rb1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:id="@+id/rb2"
+                android:layout_below="@+id/textView37"
+                android:orientation="horizontal">
+
+
+
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/no_thug"
+                android:text=" "
+                android:id="@+id/radioButton5"
+                android:layout_below="@+id/textView37"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/radioButton2"
+                android:layout_toStartOf="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/low_thug"
+                android:text=" "
+                android:id="@+id/radioButton6"
+                android:layout_alignTop="@+id/radioButton5"
+                android:layout_toRightOf="@+id/radioButton5"
+                android:layout_alignRight="@+id/radioButton2"
+                android:layout_alignEnd="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/high_thug"
+                android:text=" "
+                android:id="@+id/radioButton8"
+                android:layout_below="@+id/textView37"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignRight="@+id/radioButton3"
+                android:layout_alignEnd="@+id/radioButton3" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/very_high_thug"
+                android:text=" "
+                android:id="@+id/radioButton7"
+                android:layout_below="@+id/textView37"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/radioButton4"
+                android:layout_alignStart="@+id/radioButton4" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Dose your air cause itching problem ?  "
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:paddingTop="10dp"
+                android:id="@+id/textView38"
+                android:layout_below="@+id/rb2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_below="@+id/textView38"
+                android:id="@+id/rb3"
+                android:orientation="horizontal"
+                >
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/no_thug"
+                android:text=" "
+                android:id="@+id/radioButton9"
+                android:layout_below="@+id/textView38"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/low_thug"
+                android:text=" "
+                android:id="@+id/radioButton10"
+                android:layout_below="@+id/textView38"
+                android:layout_toLeftOf="@+id/radioButton8"
+                android:layout_toStartOf="@+id/radioButton8" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/high_thug"
+                android:text=" "
+                android:id="@+id/radioButton11"
+                android:layout_below="@+id/textView38"
+                android:layout_alignRight="@+id/radioButton8"
+                android:layout_alignEnd="@+id/radioButton8" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/very_high_thug"
+                android:text=" "
+                android:id="@+id/radioButton12"
+                android:layout_below="@+id/textView38"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Intensity of cough,fever,cold currently ?"
+                android:textSize="22dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView39"
+                android:layout_below="@+id/rb3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:orientation="horizontal"
+                android:layout_below="@+id/textView39"
+                android:id="@+id/rb4"
+                >
+
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/no_thug"
+                android:text=" "
+                android:id="@+id/radioButton13"
+                android:layout_below="@+id/textView37"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/radioButton2"
+                android:layout_toStartOf="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/low_thug"
+                android:text=" "
+                android:id="@+id/radioButton14"
+                android:layout_alignTop="@+id/radioButton5"
+                android:layout_toRightOf="@+id/radioButton5"
+                android:layout_alignRight="@+id/radioButton2"
+                android:layout_alignEnd="@+id/radioButton2" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/high_thug"
+                android:text=" "
+                android:id="@+id/radioButton15"
+                android:layout_below="@+id/textView37"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3"
+                android:layout_alignRight="@+id/radioButton3"
+                android:layout_alignEnd="@+id/radioButton3" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/very_high_thug"
+                android:text=" "
+                android:id="@+id/radioButton16"
+                android:layout_below="@+id/textView37"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignLeft="@+id/radioButton4"
+                android:layout_alignStart="@+id/radioButton4" />
+
+
+            </RadioGroup>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. Have you seen any airborn epidemy in your area ?  "
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView40"
+                android:layout_below="@+id/rb4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:id="@+id/rb5"
+                android:layout_below="@+id/textView40"
+                android:orientation="horizontal"
+                >
+
+
+
+
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/yes_thug"
+                android:text=" "
+                android:id="@+id/radioButton17"
+                android:layout_below="@+id/textView38"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RadioButton
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/low_thug"
+                android:text=" "
+                android:id="@+id/radioButton18"
+                android:layout_below="@+id/textView38"
+                android:layout_toLeftOf="@+id/radioButton8"
+                android:layout_toStartOf="@+id/radioButton8" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5. What it is ?  "
+                android:textSize="25dp"
+                android:paddingTop="10dp"
+                android:textColor="#FFFFFF"
+                android:id="@+id/textView41"
+                android:layout_below="@+id/rb5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/textView41"
+                android:id="@+id/text42"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:text="Save Your Area !"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:onClick="das"
+
+                android:id="@+id/button55"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/text42"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

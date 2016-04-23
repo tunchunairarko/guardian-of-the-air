@@ -4,183 +4,132 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.mohammodraihanulbash.guardianoftheair.DashboardActivity">
+    android:background="@drawable/background"
+    tools:context="com.example.mohammodraihanulbash.guardianoftheair.Dashboard">
 
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Walk Through"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:id="@+id/button"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Points:"
-        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Points : "
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="25dp"
         android:id="@+id/textView"
-        android:paddingTop="8dp"
-        android:textColor="#000"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="51dp"
         android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Current Area Ranking:"
-        android:textSize="20dp"
-        android:id="@+id/textView1"
-        android:paddingTop="40dp"
-        android:textColor="#000"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="51dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Global Ranking:"
-        android:textSize="20dp"
-        android:id="@+id/textView2"
-        android:paddingTop="95dp"
-        android:textColor="#000"
-        android:paddingRight="25dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginStart="51dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/button"
-        android:layout_toEndOf="@+id/button" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/points"
-        android:paddingRight="20dp"
-        android:textSize="20dp"
-        android:text="120"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/area_rank"
-        android:paddingTop="65dp"
-        android:paddingRight="20dp"
-        android:textSize="20dp"
-        android:text="120"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/g_rank"
-        android:paddingTop="118dp"
-        android:paddingRight="20dp"
-        android:textSize="20dp"
-        android:text="120"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="  Be A Guardian"
-        android:id="@+id/button3"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button"
-        android:layout_alignBottom="@+id/textView2"
-        android:layout_toLeftOf="@+id/textView1"
-        android:layout_toStartOf="@+id/textView1" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Air Condition Of Your Area"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:id="@+id/button4"
-        android:layout_below="@+id/g_rank"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="areacondition"
-        android:layout_toStartOf="@+id/textView2"
-        android:layout_toLeftOf="@+id/textView2" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search City"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:id="@+id/button5"
-        android:onClick="search"
-        android:layout_below="@+id/g_rank"
-        android:layout_alignRight="@+id/g_rank"
-        android:layout_alignEnd="@+id/g_rank"
-        android:layout_alignLeft="@+id/textView2"
-        android:layout_alignStart="@+id/textView2"
-        android:layout_alignBottom="@+id/button4"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Protect The Community"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:id="@+id/button6"
-        android:onClick="protect"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="6dp"
-        android:paddingLeft="95dp"
-        android:text="News And Discussion"
-        android:textStyle="bold"
-        android:textColor="#000"
-        android:textSize="20dp"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/button6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/button6"
-        android:layout_alignEnd="@+id/button6" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Guardian Tipu: Too much heat and dust in Bashundhara R\A."
-        android:id="@+id/textView4"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3"
-        android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Global Rank : "
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:text="20"
+        android:textSize="30dp"
+        android:paddingLeft="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:inputType="number"
+        android:ems="10"
+        android:text="3"
+        android:paddingLeft="30dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:id="@+id/editText2"
+        android:layout_below="@+id/editText"
+        android:layout_toRightOf="@+id/textView2"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_weight="0.48"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/search_your_area"
+        android:id="@+id/button"
+        android:onClick="areanews"
+        android:text="."
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/button2"
+        android:layout_toStartOf="@+id/button2" />
+
+    <Button
+        android:layout_width="95dp"
+        android:layout_height="95dp"
+        android:text=" "
+        android:background="@drawable/profile"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="web"
+        android:textColor="#000"
+        android:id="@+id/button2"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@drawable/city"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/button3"
+        android:onClick="citynews"
+        android:text="."
+        android:layout_below="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_toLeftOf="@+id/button2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/contribute"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:text="."
+        android:id="@+id/button4"
+        android:onClick="input1"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="64dp" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageButton"
+        android:text=" "
+        android:onClick="webb"
+        android:background="@drawable/webview"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

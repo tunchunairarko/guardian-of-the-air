@@ -1,16 +1,25 @@
 <resources>
-    <string name="app_name">Guardian Of The Air</string>
+    <string name="app_name">GuardianOfTheAir</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="title_activity_dashboard">Dashboard</string>
-    <string name="title_activity_area">Guardian Of The Air</string>
-    <string name="title_activity_maps">Map</string>
-    <string name="title_activity_area_map">Guardian Of The Air</string>
-    <string name="title_activity_search_city">Search City</string>
-    <string name="title_activity_city_map">Guardian Of The Air</string>
-    <string name="title_activity_input">Protect The Community</string>
-    <string name="title_activity_output">Guardian of The Air</string>
-    <string name="title_activity_input2">Contribute to the Community</string>
+    <string name="title_activity_login">Guardian Of The AIR</string>
+    <string name="title_activity_area_news">Guardian Of The AIR</string>
+    <string name="title_activity_dashboard">Guardian Of The AIR</string>
+    <string name="title_activity_input">Guardian Of The AIR</string>
+    <string name="title_activity_input2">Guardian Of The AIR</string>
+    <string name="title_activity_output">Guardian Of The AIR</string>
+    <string name="title_activity_search_city">Guardian Of The AIR</string>
+    <string name="title_activity_city_news">Guardian Of The Air</string>
+    <string name="title_activity_area_maps">Guardian Of The AIR</string>
+    <string name="title_activity_city_map">Guardian Of The AIR</string>
+    <string name="title_activity_area_condition">Guardian Of the AIR</string>
+    <string name="title_activity_city_cindition">Guardian of The AIR</string>
+    <string name="title_activity_input3">Guardian Of The AIR</string>
+    <string name="title_activity_web">Guardian Of The Air</string>
+    <string name="title_activity_profile">Guardian</string>
+    <string-array name="city_names">
+        <item>Khulna</item>
+        <item>Chittagong</item>
+    </string-array>
 </resources>

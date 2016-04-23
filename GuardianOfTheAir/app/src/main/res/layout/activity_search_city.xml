@@ -1,10 +1,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.mohammodraihanulbash.guardianoftheair.SearchCityActivity">
+    android:background="@drawable/background"
+    tools:context="com.example.mohammodraihanulbash.guardianoftheair.SearchCity">
+
 
 
     <TextView
@@ -19,7 +23,7 @@
                       public health there"
         android:textStyle="bold"
         android:textSize="15dp"
-        android:textColor="#000"
+        android:textColor="#ffffff"
         android:id="@+id/textView16"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -35,20 +39,11 @@
         android:text="Select Country"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#ffffff"
         android:id="@+id/textView17"
         android:layout_below="@+id/textView16"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="45dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:prompt="@string/prompt"
-        android:layout_below="@+id/textView17"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +52,7 @@
         android:text="Select City"
         android:textStyle="bold"
         android:textSize="20dp"
-        android:textColor="#000"
+        android:textColor="#ffffff"
         android:id="@+id/textView18"
         android:layout_below="@+id/textView16"
         android:layout_centerHorizontal="true"
@@ -67,10 +62,10 @@
         android:id="@+id/spinner1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:prompt="@string/prompt"
         android:layout_below="@+id/textView18"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:spinnerMode="dropdown" />
 
     <Button
         android:layout_width="wrap_content"
@@ -80,9 +75,10 @@
         android:textSize="20dp"
         android:textColor="#000"
         android:id="@+id/button8"
-        android:layout_alignTop="@+id/button9"
-        android:layout_toLeftOf="@+id/textView17"
-        android:layout_toStartOf="@+id/textView17" />
+        android:onClick="citysearch"
+        android:layout_below="@+id/button9"
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18" />
 
     <Button
         android:layout_width="wrap_content"
@@ -92,10 +88,15 @@
         android:textSize="20dp"
         android:textColor="#000"
         android:id="@+id/button9"
-        android:layout_below="@+id/spinner1"
+        android:onClick="backkk"
+        android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/textView17"
-        android:layout_toEndOf="@+id/textView17"
-        android:layout_marginTop="52dp" />
+        android:layout_toEndOf="@+id/textView17" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView6" />
 
 
 </RelativeLayout>
